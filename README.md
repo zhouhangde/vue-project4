@@ -15,3 +15,7 @@
  * vue-实战项目（个人博客第二期）--收费
   Vue实战项目（后台用户管理系统）--收费（学习增删改查）
   vueX从入门到开发（深入浅出）
+
+3https://molunerfinn.com/  //全站搭建后台
+   https://molunerfinn.com/Vue+Koa/#MySQL  //以下为命令
+   yarn global add sequelize-auto && yarn add sequelize mysql
