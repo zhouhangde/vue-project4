@@ -3,7 +3,7 @@
 const user = require('../models/user.js');
 const jwt = require('koa-jwt'); // 引入koa-jwt
 const bcrypt = require('bcryptjs');  //替换md5加密
-
+const jsonwebtoken = require('jsonwebtoken'); // 引入koa-jwt
 const getUserInfo = function* (){
   const id = this.params.id; // 获取url里传过来的参数里的id
   const result = yield user.getUserById(id);  // 通过yield “同步”地返回查询结果
@@ -26,11 +26,11 @@ const postUserAuth = function* (){
         id: userInfo.id
       }
       const secret = 'vue-koa-demo'; // 指定密钥，这是之后用来判断token合法性的标志
-      // const token = jwt.sign(userToken,secret); // 签发token
+      const token = jsonwebtoken.sign(userToken,secret); // 签发token
       this.body = {
         success: true,
-        // token: token, // 返回token
-        token: userToken, // 返回token
+        token: token, // 返回token
+        // token: userToken, // 返回token
       }
     }
   }else{

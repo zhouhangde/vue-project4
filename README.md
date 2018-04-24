@@ -22,3 +22,4 @@
    //https://molunerfinn.com/Vue+Koa/#API-Test
    yarn add koa-jwt，安装Koa的JSON-WEB-TOKEN库。
    npm install --save dns
+   npm install --save jsonwebtoken
