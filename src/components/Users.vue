@@ -16,17 +16,17 @@
 export default {
   name: 'users',
 //   属性取值(父传子)，获取app.vue的值
-//   props:["users"],
+  props:["users"],
 
 // 官方推荐
-  props:{
-     users:{
-        //  当前users传的类型
-         type:Array,
-        //  查看是否为标准的Array
-         required:true
-     }
-  },
+//   props:{
+//      users:{
+//         //  当前users传的类型
+//          type:Array,
+//         //  查看是否为标准的Array
+//          required:true
+//      }
+//   },
   data () {
     return {
         // users:["a","b","c"]
