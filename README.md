@@ -19,3 +19,6 @@
 3https://molunerfinn.com/  //全站搭建后台
    https://molunerfinn.com/Vue+Koa/#MySQL  //以下为命令
    yarn global add sequelize-auto && yarn add sequelize mysql
+   //https://molunerfinn.com/Vue+Koa/#API-Test
+   yarn add koa-jwt，安装Koa的JSON-WEB-TOKEN库。
+   npm install --save dns

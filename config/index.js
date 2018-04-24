@@ -10,7 +10,17 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    // 修改为同域请求将8080访问8889
+    proxyTable: {
+       '/auth':{
+          target: 'http://localhost:8889',
+          changeOrigin: true
+        },
+        '/api':{
+          target: 'http://localhost:8889',
+          changeOrigin: true
+        }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

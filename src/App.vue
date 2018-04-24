@@ -7,8 +7,9 @@
       <li><a href="/helloworld">Hollo</a></li>-->
 
       <!--使用路由跳转做导航-->
-      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/home">Home</router-link></li>
       <li><router-link to="/helloworld">Hollo</router-link></li>
+      <li><router-link to="/login">login</router-link></li>
     </ul>
     <router-view></router-view>
   </div>
