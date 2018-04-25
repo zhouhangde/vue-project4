@@ -10,8 +10,8 @@ import Login from './components/Login'
 import Home from './components/Home'
 import TodoList from './components/TodoList'
 // import Users from './components/Users'
-Vue.prototype.$http = Axios
-// Vue.prototype.$http = Axios // 类似于vue-resource的调用方法，之后可以在实例里直接用this.$http.get()等
+
+Vue.prototype.$http = Axios // 类似于vue-resource的调用方法，之后可以在实例里直接用this.$http.get()等
 Vue.config.productionTip = false
 
 //全局注册组件,前面为组件名称，后面为对应的组件

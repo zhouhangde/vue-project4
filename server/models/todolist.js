@@ -6,6 +6,7 @@ const db = require('../config/db.js'),
 const TodolistDb = db.Todolist; // 引入数据库
 
 const Todolist = TodolistDb.import(todoModel); 
+
 const getTodolistById = function* (id){  // 获取某个用户的全部todolist
   const todolist = yield Todolist.findAll({ // 查找全部的todolist
     where: {
@@ -16,7 +17,6 @@ const getTodolistById = function* (id){  // 获取某个用户的全部todolist
 
   return todolist // 返回数据
 }
-
 
 const createTodolist = function* (data){ // 给某个用户创建一条todolist
   yield Todolist.create({
@@ -51,7 +51,6 @@ const updateTodolist = function* (id,user_id,status){
   )
   return true
 }
-
 
 module.exports = {
   getTodolistById,
