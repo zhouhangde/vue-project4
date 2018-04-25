@@ -17,6 +17,7 @@ const getTodolistById = function* (id){  // 获取某个用户的全部todolist
   return todolist // 返回数据
 }
 
+
 const createTodolist = function* (data){ // 给某个用户创建一条todolist
   yield Todolist.create({
     user_id: data.id, // 用户的id，用来确定给哪个用户创建

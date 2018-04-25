@@ -8,6 +8,7 @@ const getTodolist = function* (){ // 获取某个用户的所有todolist
   this.body = result // 将请求的结果放到response的body里返回
 }
 
+
 const createTodolist = function* (){ // 给某个用户创建一条todolist
   const data = this.request.body; // post请求，数据是在request.body里的
   const result = yield todolist.createTodolist(data);
@@ -40,7 +41,7 @@ const updateTodolist = function* (){
   }
 }
 
-module.exports = (router) => {
+module.exports = {
   getTodolist,
   createTodolist,
   removeTodolist,
