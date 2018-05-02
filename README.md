@@ -23,3 +23,9 @@
    yarn add koa-jwt，安装Koa的JSON-WEB-TOKEN库。
    npm install --save dns
    npm install --save jsonwebtoken
+
+   项目运行
+      npm run dev
+      后端node app.js
+
+访问http://locahost:8080

@@ -9,6 +9,8 @@ import HelloWorld from './components/HelloWorld'
 import Login from './components/Login'
 import Home from './components/Home'
 import TodoList from './components/TodoList'
+import Blog from './components/Blog'
+import Buju1 from './components/Buju1'
 // import Users from './components/Users'
 
 Vue.prototype.$http = Axios // 类似于vue-resource的调用方法，之后可以在实例里直接用this.$http.get()等
@@ -33,7 +35,9 @@ const router =new VueRouter({
      {path:"/helloWorld",component:HelloWorld},
      {path:"/login",component:Login},
      {path:"/home",component:Home},
-     {path:"/todolist",component:TodoList}
+     {path:"/todolist",component:TodoList},
+     {path:"/blog",component:Blog},
+     {path:"/buju1",component:Buju1}
    ],
   //  去掉默认路径的#号
    mode:"history"

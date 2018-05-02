@@ -11,6 +11,8 @@
       <li><router-link to="/helloworld">helloworld</router-link></li>
       <li><router-link to="/login">login</router-link></li>
       <li><router-link to="/todolist">todolist</router-link></li>
+      <li><router-link to="/blog">blog</router-link></li>
+      <li><router-link to="/buju1">两栏布局</router-link></li>
     </ul>
     <router-view></router-view>
   </div>
@@ -30,4 +32,15 @@ export default {
 </script>
 
 <style scoped>
+    ul{
+       overflow: hidden;
+    }
+    ul li{
+       float:left;
+       margin-left:20px;
+       list-style-type: none;
+    }
+    a{
+      text-decoration:none;
+    }
 </style>
