@@ -27,5 +27,6 @@
    项目运行
       npm run dev
       后端node app.js
+      node版本需要比较新的版本
 
 访问http://locahost:8080
