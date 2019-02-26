@@ -24,6 +24,10 @@
    npm install --save dns
    npm install --save jsonwebtoken
 
+  4git
+    zhouhangde
+    zh5235340133299 
+
    项目运行
       npm run dev
       后端node app.js
